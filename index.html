@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>get out of hole</title>
+  
+</head>
+<body>
+    <!-- this DIV is IMP for working of button -->
+    <div class="content" id="main-content">
+<!-- NAVIGATION -->
+  <nav class="bottom-nav">
+      <a href="#course" onclick="showSection('')">
+      <span class="icon">📚</span>
+      <span class="text">Course</span>
+    </a>
+      <a href="#feeds" onclick="showSection('')">
+      <span class="icon">📄</span>
+      <span class="text">Feeds</span>
+    </a>
+    <a href="#profile"
+    onclick="showSection('course')">
+      <span class="icon">👤</span>
+      <span class="text">Profile</span>
+    </a>
+  </nav>
+  <!-- nav completed-->
+     <div class="heading-decoration">
+        <center>
+            <h1 class="shivam">
+              Our courses.
+            </h1>
+            <p class="shivam">
+                 Welcome to our life changing  project.Here you will get a lots of course that can change your life
+            </p>
+            </br>
+            </center>
+    </div>  
+            <!-- COURSE SLIDER CODE-->
+          <div class="course-slider-container">
+    <div class="course-slider">
+        <a   onclick="showSection('course1')">
+      <div class="course-card">Course 1</div>
+        </a>
+        <a onclick="showSection('course1')">
+      <div class="course-card">Course 2</div>
+        </a>
+        <a onclick="showSection('course1')">
+      <div class="course-card">Course 3</div>
+        </a>
+        <a onclick="showSection('course1')">
+      <div class="course-card">Course 4</div>
+        </a>
+    </div>
+  </div>
+          <!-- COURSE SLIDER CODE ENDS-->
+  <div class="select-Course"> 
+      <div>
+          <h3> Be addiction free!</h3>
+          <p>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
+           <button class="btn" onclick="showSection('course1')">Enroll</button>
+      </div> <!-- end of this course div>
+  <!--  -->
+  <div>
+          <h3> MedItation</h3>
+          <p>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
+           <button class="btn" onclick="showSection('course1')">Enroll</button>
+      </div>
+      </div><!-- end of select course -->
+  </div><!-- end of this course div-->
+  </div><!-- end of main section -->
+  <div class="course-section" id="course1">
+      hi dude its working 
+      </br>
+      <button class="btn" onclick="showMainContent()">Back to Courses</button>
+  </div>
+</body>
+<script src="logic.js">
+</script>
+<link rel="stylesheet" href="style.css">
+</html>
